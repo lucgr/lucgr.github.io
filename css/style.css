@@ -1295,6 +1295,7 @@
 		#banner p {
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
+			color: 'white';
 		}
 
 	body.is-loading #banner:after {
