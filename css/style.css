@@ -11,6 +11,7 @@
 
 	body {
 		background: #fff;
+		background-image: url('images/clouds.jpg');
 	}
 
 		body.is-loading * {
