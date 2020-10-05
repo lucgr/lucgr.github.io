@@ -1,118 +1,135 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title> Head In The Clouds </title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/jquery.scrollgress.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.slidertron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
+
+<head>
+    <title> Head In The Clouds </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/mainScript.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrollgress.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.slidertron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body class="landing">
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
 
-		<!-- Header -->
-			<header id="header" class="alt skel-layers-fixed">
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="" class="icon fa-angle-down">Pages</a>
-							<ul>
-								<li><a href="sound-settings.html">Sound settings</a></li>
-								<li><a href="activation-settings.html">Activation settings</a></li>
-								<li><a href="bluetooth-pairing.html">Bluetooth pairing</a></li>
-								<!--<li>
-									<a href="">Other</a>
-									<ul>
-										<li><a href="#">Option 1</a></li>
-										<li><a href="#">Option 2</a></li>
-										<li><a href="#">Option 3</a></li>
-										<li><a href="#">Option 4</a></li>
-									</ul>
-								</li>-->
-							</ul>
-						</li>
-						<!--<li><a href="elements.html">Elements</a></li>-->
-					</ul>
-				</nav>
-			</header>
+<body class="landing" onload="loaded()">
 
-		<!-- Banner -->
-			<section id="banner" style="background-image: url('images/clouds.jpg');">
-				<div class="inner">
-					<h2>Head In The Clouds</h2>
-					<p>Relax, Recharge, Heal</p>
-					<ul class="actions">
-						<li><a href="#one" class="button big scrolly">CALM ME DOWN</a></li>
-					</ul>
-				</div>
-			</section>
+    <!-- Header -->
+    <header id="header" class="alt skel-layers-fixed">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="" class="icon fa-angle-down">Pages</a>
+                    <ul>
+                        <li><a href="sound-settings.html">Sound settings</a></li>
+                        <li><a href="activation-settings.html">Activation settings</a></li>
+                        <li><a href="bluetooth-pairing.html">Device pairing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-		<!-- One -->
-			<section id="one" class="wrapper style1">
-				<div class="container">
-					<div class="row uniform">
-						<div class="4u 6u(2) 12u$(3)">
-							<section class="feature fa-play-circle-o" style = "color: #5e688f;">
-								<h3><a href="sound-settings.html">Sounds</a></h3>
-								<p>Click here to change default sound.</p>
-							</section>
-						</div>
-						<div class="4u 6u$(2) 12u$(3)">
-							<section class="feature fa-cog">
-								<h3><a href="activation-settings.html">Activation settings</a></h3>
-								<p>All settings for activation of the device is found here.</p>
-							</section>
-						</div>
-						<div class="4u$ 6u(2) 12u$(3)">
-							<section class="feature fa-rss">
-								<h3><a href="bluetooth-pairing.html">Bluetooth pairing</a></h3>
-								<p>Click here to pair a device to the app.</p>
-							</section>
-						</div>
-					</div>
-				</div>
-				<br>
-				<div class="container">
-					<header class="major">
-						<h2>Heart rate monitor</h2>
-						<p>Below we will find the heart rate monitor if a device is paired.</p>
-						<video height=80% width=80% muted autoplay loop>
-							<source src="images/heartratemonitor.mov" type="video/mp4">
-						</video>
-					</header>
-									
-				</div>
-			</section>
-			
-		
-			
-		<!-- Three -->
-			<section id="three" class="wrapper style1">
-				<div class="container">
-				</div>
-			</section>
-			
-		<!-- CTA -->
-			
-		<!-- Footer -->
-			<footer id="footer">
-			</footer>
+    <!-- Banner -->
+    <section id="banner" style="background-image: url('images/clouds.jpg');">
+        <div class="inner">
+            <h2>Head In The Clouds</h2>
+            <p>Relax, Recharge, Heal</p>
+            <ul class="actions">
+                <li><a href="#one" class="button big scrolly" id="onButton" onclick="turnOn()">CALM ME DOWN</a></li>
+            </ul>
+        </div>
+    </section>
 
-	</body>
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <div id="onOrNot"></div>
+        <div class="container">
+            <div class="row uniform">
+                <div class="4u 6u(2) 12u$(3)">
+                    <section class="feature fa-play-circle-o" style="color: #5e688f;">
+                        <h3><a href="sound-settings.html">Sounds</a></h3>
+                        <p>Click here to change default sound.</p>
+                    </section>
+                </div>
+                <div class="4u 6u$(2) 12u$(3)">
+                    <section class="feature fa-cog">
+                        <h3><a href="activation-settings.html">Activation settings</a></h3>
+                        <p>All settings for activation of the device is found here.</p>
+                    </section>
+                </div>
+                <div class="4u$ 6u(2) 12u$(3)">
+                    <section class="feature fa-rss">
+                        <h3><a href="bluetooth-pairing.html">Device pairing</a></h3>
+                        <p>Click here to pair a device to the app.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <header class="major">
+                <h2>Heart rate monitor</h2>
+                <p>Below we will find the heart rate monitor if a device is paired.</p><br>
+                <video id="hrmvid" height=80% width=80% muted autoplay loop>
+					<source src="images/heartratemonitor.mov" type="video/mp4">
+				</video>
+            </header>
+
+        </div>
+    </section>
+
+
+
+    <!-- Three -->
+    <section id="three" class="wrapper style1">
+        <div class="container">
+        </div>
+    </section>
+
+    <!-- CTA -->
+
+    <!-- Footer -->
+    <footer id="footer">
+    </footer>
+
+</body>
+<!--<script>
+		let paired = false;
+		function turnOn(){
+			let powerMessage = document.getElementById("onOrNot")
+			if(paired){
+				powerMessage.innerHTML = "<p>The device is now on!</p><br>";
+			}else{
+				powerMessage.innerHTML = "<p>Please pair a device below to turn it on.</p> <br>";
+			}
+			powerMessage.style.textAlign = "center";
+			console.log("clicked");
+		}
+		if(paired){
+
+		}
+		let heartRateVid = document.getElementById("hrmvid");
+		if (paired && heartRateVid.style.display === "none") {
+			heartRateVid.style.display = "block";
+		} else {
+			heartRateVid.style.display = "none";
+		}
+	</script>-->
+
 </html>
