@@ -2,7 +2,7 @@
 let turnedOn = false;
 let volume = 100;
 var paired = sessionStorage.getItem("pairing");
-if (paired == "") {
+if (paired == null) {
     sessionStorage.setItem("pairing", false);
 }
 
