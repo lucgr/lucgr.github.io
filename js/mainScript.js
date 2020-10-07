@@ -17,6 +17,7 @@ function turnOn() {
         powerMessage.innerHTML = "<p>Please pair a device below to turn it on.</p> <br>";
     }
     powerMessage.style.textAlign = "center";
+    turnedOn = true;
     console.log("clicked");
 }
 
@@ -25,7 +26,7 @@ function loaded() {
     var paired = sessionStorage.getItem("pairing");
     console.log(paired);
     if (heartRateVid.style.display === "none") {
-        if (paired === "true") {
+        if (paired === "true" && turnedOn == true) {
             heartRateVid.style.display = "block";
             console.log('here2');
         }
