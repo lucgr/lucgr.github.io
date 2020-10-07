@@ -4,6 +4,7 @@ let volume = 100;
 var paired = sessionStorage.getItem("pairing");
 if (paired == null) {
     sessionStorage.setItem("pairing", false);
+    console.log("null at load")
 }
 
 function turnOn() {
