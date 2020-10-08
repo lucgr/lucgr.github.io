@@ -2,17 +2,27 @@
 let turnedOn = false;
 let volume = 100;
 var paired = sessionStorage.getItem("pairing");
+var power = sessionStorage.getItem("power");
 if (paired == null) {
     sessionStorage.setItem("pairing", false);
-    console.log("null at load")
+    console.log("paired null at load")
+}
+if (power == null) {
+    sessionStorage.setItem("power", turnedOn);
 }
 
 function turnOn() {
     let powerMessage = document.getElementById("onOrNot")
-    var paired = sessionStorage.getItem("pairing");
-    console.log(paired);
-    if (paired == "true") {
+    paired = sessionStorage.getItem("pairing");
+    turnedOn = sessionStorage.getItem("power");
+    console.log("paired " + paired);
+    console.log("power " + turnedOn);
+    if (paired == "true" && turnedOn == "false") {
         powerMessage.innerHTML = "<p>The device is now on!</p><br>";
+        turnedOn = true;
+        sessionStorage.setItem("power", turnedOn);
+    } else if (turnedOn == "true") {
+        powerMessage.innerHTML = "<p>The device is already on!</p><br>";
     } else {
         powerMessage.innerHTML = "<p>Please pair a device below to turn it on.</p> <br>";
     }
