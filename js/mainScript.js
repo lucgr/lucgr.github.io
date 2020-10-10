@@ -32,18 +32,8 @@ function turnOn() {
 }
 
 function loaded() {
-    var heartRateVid = document.getElementById("hrmvid");
     var paired = sessionStorage.getItem("pairing");
-    console.log(paired);
-    if (heartRateVid.style.display === "none") {
-        if (paired === "true" && turnedOn == true) {
-            heartRateVid.style.display = "block";
-            console.log('here2');
-        }
-        console.log('here3');
-    } else if (paired == "false") {
-        heartRateVid.style.display = "none";
-    }
+    console.log("Paired at load: " + paired);
 }
 
 function pair() {
