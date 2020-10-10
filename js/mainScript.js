@@ -52,3 +52,23 @@ function pair() {
         response.innerHTML = "You already have a device paired";
     }
 }
+
+function defaultSound() {
+    var defaultS = document.getElementById("defaultS");
+    defaultS.innerHTML = "The default sound is now changed"
+    console.log("Default sound changed");
+}
+
+function mute() {
+    var mutedEl = document.getElementById("muted");
+    var sButton = document.getElementById("sButton");
+    if (sButton.innerHTML == "Mute device") {
+        mutedEl.innerHTML = "Your device is now muted"
+        sButton.innerHTML = "Unmute device";
+        console.log("Device now being muted");
+    } else {
+        mutedEl.innerHTML = "Your device is now unmuted"
+        sButton.innerHTML = "Mute device";
+    }
+
+}
