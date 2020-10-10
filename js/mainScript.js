@@ -72,3 +72,16 @@ function mute() {
     }
 
 }
+
+document.getElementById('sButton').onclick = function() {
+    var mutedEl = document.getElementById("muted");
+    //var sButton = document.getElementById("sButton");
+    if (sButton.innerHTML == "Mute device") {
+        mutedEl.innerHTML = "Your device is now muted"
+        sButton.innerHTML = "Unmute device";
+        console.log("Device now being muted");
+    } else {
+        mutedEl.innerHTML = "Your device is now unmuted"
+        sButton.innerHTML = "Mute device";
+    }
+};
