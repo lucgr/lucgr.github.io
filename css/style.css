@@ -1,5 +1,6 @@
 /* Basic */
 
+@import url(font-awesome.min.css);
 body {
     background: #fff;
     background-image: url('images/clouds.jpg');
