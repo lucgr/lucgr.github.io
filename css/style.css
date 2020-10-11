@@ -1,7 +1,6 @@
-@import url(font-awesome.min.css);
-
 /* Basic */
 
+@import url(font-awesome.min.css);
 body {
     background: #fff;
     background-image: url('images/clouds.jpg');
@@ -44,7 +43,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #e0555a !important;
+    color: #915e71 !important;
     border-bottom-color: transparent;
 }
 
@@ -480,7 +479,7 @@ input[type="radio"]+label:before {
 }
 
 .icon>.label {
-    /*display: none;*/
+    display: none;
 }
 
 
