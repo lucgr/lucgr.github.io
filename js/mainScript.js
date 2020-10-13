@@ -71,4 +71,12 @@ function mute() {
         sButton.innerHTML = "Mute device";
     }
 
-}
+    function playClassical() {
+        var sound = new Audio("/Users/20190860/Documents/GitHub/lucgr.github.io/js/media/classical.mp3");
+        console.log('Sound clicked');
+        sound.play()
+        setTimeout(function() {
+            sound.pause();
+            sound.currentTime = 0;
+        }, 15000);
+    }

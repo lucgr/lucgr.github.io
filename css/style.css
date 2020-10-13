@@ -23,7 +23,7 @@ body,
 input,
 select,
 textarea {
-    color: #646464;
+    color: #915e71;
     font-family: "Lato", Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 300;
@@ -1020,7 +1020,7 @@ input[type="button"]:disabled,
 }
 
 .wrapper.style1 {
-    background: #f2f2f2;
+    background: #f9f3fb;
 }
 
 .wrapper.style1 .box {
