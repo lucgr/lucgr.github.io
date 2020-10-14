@@ -81,6 +81,7 @@ function playClassical() {
         soundPreview = true;
     }
     setTimeout(function() {
+        console.log('in timeout')
         sound0.pause();
         sound0.currentTime = 0;
         soundPreview = false;
