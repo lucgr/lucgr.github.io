@@ -5,6 +5,7 @@ var paired = sessionStorage.getItem("pairing");
 var power = sessionStorage.getItem("power");
 var soundPreview = false;
 var chosenSound;
+var sounds = ['classical music', 'breathing exercises', 'nature sounds', 'lo-fi music'];
 
 if (paired == null) {
     sessionStorage.setItem("pairing", false);
@@ -58,7 +59,7 @@ function pair() {
 
 function defaultSound() {
     var defaultS = document.getElementById("defaultS");
-    defaultS.innerHTML = "The default sound is now changed"
+    defaultS.innerHTML = "The default sound is now changed to " + sounds[chosenSound];
     console.log("Default sound changed to: " + chosenSound);
 }
 
@@ -90,6 +91,7 @@ function playClassical() {
         sound0.currentTime = 0;
         soundPreview = false;
         button.style.backgroundColor = 'white';
+        //button.onmouseover = function() { button.style.backgroundColor = "#e3e2de" }
     }, 15000);
 }
 
@@ -107,6 +109,7 @@ function playBreathing() {
         sound1.pause();
         sound1.currentTime = 0;
         soundPreview = false;
+        button.style.backgroundColor = 'white';
     }, 15000);
 }
 
