@@ -3,6 +3,7 @@ let turnedOn = false;
 let volume = 100;
 var paired = sessionStorage.getItem("pairing");
 var power = sessionStorage.getItem("power");
+var soundPreview = false;
 if (paired == null) {
     sessionStorage.setItem("pairing", false);
     console.log("paired null at load")
@@ -73,41 +74,57 @@ function mute() {
 }
 
 function playClassical() {
-    var sound0 = new Audio("/js/media/classical.mp3");
-    console.log('Classical music clicked');
-    sound0.play()
+    if (soundPreview == false) {
+        var sound0 = new Audio("/js/media/classical.mp3");
+        console.log('Classical music clicked');
+        sound0.play()
+        soundPreview = true;
+    }
     setTimeout(function() {
         sound0.pause();
         sound0.currentTime = 0;
+        soundPreview = false;
     }, 15000);
 }
 
 function playBreathing() {
-    var sound1 = new Audio("/js/media/breathing_exercise.mp3");
-    console.log('Breathing exercise clicked');
-    sound1.play()
+    if (soundPreview == false) {
+        var sound1 = new Audio("/js/media/breathing_exercise.mp3");
+        console.log('Breathing exercise clicked');
+        sound1.play()
+        soundPreview = true;
+    }
     setTimeout(function() {
         sound1.pause();
         sound1.currentTime = 0;
+        soundPreview = false;
     }, 15000);
 }
 
 function playNature() {
-    var sound2 = new Audio("/js/media/naturesound.mp3");
-    console.log('Nature sound clicked');
-    sound2.play()
+    if (soundPreview == false) {
+        var sound2 = new Audio("/js/media/naturesound.mp3");
+        console.log('Nature sound clicked');
+        sound2.play()
+        soundPreview = true;
+    }
     setTimeout(function() {
         sound2.pause();
         sound2.currentTime = 0;
+        soundPreview = false;
     }, 15000);
 }
 
 function playLofi() {
-    var sound3 = new Audio("/js/media/lofi_music.mp3");
-    console.log('Lo-fi music clicked');
-    sound3.play()
+    if (soundPreview == false) {
+        var sound3 = new Audio("/js/media/lofi_music.mp3");
+        console.log('Lo-fi music clicked');
+        sound3.play()
+        soundPreview = true;
+    }
     setTimeout(function() {
         sound3.pause();
         sound3.currentTime = 0;
+        soundPreview = false;
     }, 15000);
 }
