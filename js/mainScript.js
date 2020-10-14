@@ -103,6 +103,7 @@ function playBreathing() {
 }
 
 function playNature() {
+    console.log(soundPreview)
     if (soundPreview == false) {
         var sound2 = new Audio("/js/media/naturesound.mp3");
         console.log('Nature sound clicked');
