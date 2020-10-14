@@ -4,6 +4,8 @@ let volume = 100;
 var paired = sessionStorage.getItem("pairing");
 var power = sessionStorage.getItem("power");
 var soundPreview = false;
+var chosenSound;
+
 if (paired == null) {
     sessionStorage.setItem("pairing", false);
     console.log("paired null at load")
@@ -57,7 +59,7 @@ function pair() {
 function defaultSound() {
     var defaultS = document.getElementById("defaultS");
     defaultS.innerHTML = "The default sound is now changed"
-    console.log("Default sound changed");
+    console.log("Default sound changed to: " + chosenSound);
 }
 
 function mute() {
@@ -79,12 +81,15 @@ function playClassical() {
         console.log('Classical music clicked');
         sound0.play()
         soundPreview = true;
+        var button = document.getElementById('classical');
+        button.style.backgroundColor = '#c2c1be';
+        chosenSound = 0;
     }
     setTimeout(function() {
-        console.log('in timeout')
         sound0.pause();
         sound0.currentTime = 0;
         soundPreview = false;
+        button.style.backgroundColor = 'white';
     }, 15000);
 }
 
@@ -94,6 +99,9 @@ function playBreathing() {
         console.log('Breathing exercise clicked');
         sound1.play()
         soundPreview = true;
+        var button = document.getElementById('breathing');
+        button.style.backgroundColor = '#c2c1be';
+        chosenSound = 1;
     }
     setTimeout(function() {
         sound1.pause();
@@ -109,11 +117,15 @@ function playNature() {
         console.log('Nature sound clicked');
         sound2.play()
         soundPreview = true;
+        var button = document.getElementById('nature');
+        button.style.backgroundColor = '#c2c1be';
+        chosenSound = 2;
     }
     setTimeout(function() {
         sound2.pause();
         sound2.currentTime = 0;
         soundPreview = false;
+        button.style.backgroundColor = 'white';
     }, 15000);
 }
 
@@ -123,10 +135,14 @@ function playLofi() {
         console.log('Lo-fi music clicked');
         sound3.play()
         soundPreview = true;
+        var button = document.getElementById('lofi');
+        button.style.backgroundColor = '#c2c1be';
+        chosenSound = 3;
     }
     setTimeout(function() {
         sound3.pause();
         sound3.currentTime = 0;
         soundPreview = false;
+        button.style.backgroundColor = 'white';
     }, 15000);
 }
