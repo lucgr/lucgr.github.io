@@ -85,13 +85,15 @@ function playClassical() {
         var button = document.getElementById('classical');
         button.style.backgroundColor = '#c2c1be';
         chosenSound = 0;
+        var selection = document.getElementById('selection');
+        selection.innerHTML = 'You have currently chosen ' + sounds[chosenSound];
     }
     setTimeout(function() {
         sound0.pause();
         sound0.currentTime = 0;
         soundPreview = false;
         button.style.backgroundColor = 'white';
-        //button.onmouseover = function() { button.style.backgroundColor = "#e3e2de" }
+        button.onmouseover = function() { button.style.backgroundColor = "" }
     }, 15000);
 }
 
@@ -104,12 +106,15 @@ function playBreathing() {
         var button = document.getElementById('breathing');
         button.style.backgroundColor = '#c2c1be';
         chosenSound = 1;
+        var selection = document.getElementById('selection');
+        selection.innerHTML = 'You have currently chosen ' + sounds[chosenSound];
     }
     setTimeout(function() {
         sound1.pause();
         sound1.currentTime = 0;
         soundPreview = false;
         button.style.backgroundColor = 'white';
+        button.onmouseover = function() { button.style.backgroundColor = "" }
     }, 15000);
 }
 
@@ -123,12 +128,15 @@ function playNature() {
         var button = document.getElementById('nature');
         button.style.backgroundColor = '#c2c1be';
         chosenSound = 2;
+        var selection = document.getElementById('selection');
+        selection.innerHTML = 'You have currently chosen ' + sounds[chosenSound];
     }
     setTimeout(function() {
         sound2.pause();
         sound2.currentTime = 0;
         soundPreview = false;
         button.style.backgroundColor = 'white';
+        button.onmouseover = function() { button.style.backgroundColor = "" }
     }, 15000);
 }
 
@@ -141,11 +149,14 @@ function playLofi() {
         var button = document.getElementById('lofi');
         button.style.backgroundColor = '#c2c1be';
         chosenSound = 3;
+        var selection = document.getElementById('selection');
+        selection.innerHTML = 'You have currently chosen ' + sounds[chosenSound];
     }
     setTimeout(function() {
         sound3.pause();
         sound3.currentTime = 0;
         soundPreview = false;
         button.style.backgroundColor = 'white';
+        button.onmouseover = function() { button.style.backgroundColor = "" }
     }, 15000);
 }
