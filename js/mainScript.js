@@ -59,7 +59,11 @@ function pair() {
 
 function defaultSound() {
     var defaultS = document.getElementById("defaultS");
-    defaultS.innerHTML = "The default sound is now changed to " + sounds[chosenSound];
+    if (chosenSound == undefined) {
+        defaultS.innerHTML = "Please choose a sound and try again.";
+    } else {
+        defaultS.innerHTML = "The default sound is now changed to " + sounds[chosenSound];
+    }
     console.log("Default sound changed to: " + chosenSound);
 }
 
