@@ -5,6 +5,8 @@ var paired = sessionStorage.getItem("pairing");
 var power = sessionStorage.getItem("power");
 var soundPreview = false;
 var chosenSound;
+var heartRate = 120;
+var soundActive = "on";
 var sounds = ['classical music', 'breathing exercises', 'nature sounds', 'lo-fi music'];
 
 if (paired == null) {
@@ -163,4 +165,25 @@ function playLofi() {
         button.style.backgroundColor = 'white';
         button.onmouseover = function() { button.style.backgroundColor = "" }
     }, 15000);
+}
+
+function saveSettings() {
+    var save = document.getElementById("save");
+    var heartrateEl = document.getElementById('heartrate');
+    console.log(typeof heartrateEl.value);
+    if (heartrateEl.value != "") {
+        heartRate = heartrateEl.value;
+    }
+    save.innerHTML = "Your settings have now been saved. <br> Heartrate at activation: " + heartRate + "bpm <br> Sound at activation: " + soundActive;
+}
+
+function toggleSound() {
+    var active = document.getElementById("active");
+    if (soundActive == "on") {
+        soundActive = "off";
+        active.innerHTML = 'Sound at activation is currently off';
+    } else {
+        soundActive = "on";
+        active.innerHTML = 'Sound at activation is currently on';
+    }
 }
