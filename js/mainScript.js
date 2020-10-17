@@ -170,7 +170,6 @@ function playLofi() {
 function saveSettings() {
     var save = document.getElementById("save");
     var heartrateEl = document.getElementById('heartrate');
-    console.log(typeof heartrateEl.value);
     if (heartrateEl.value != "") {
         heartRate = heartrateEl.value;
     }
