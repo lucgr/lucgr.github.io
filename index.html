@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Gether-Rønning - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.75rem;
+            top: 0.5rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            background-color: #4F46E5; /* indigo-600 */
+            border: 4px solid #F3F4F6; /* gray-100 */
+        }
+        .dark .timeline-item::before {
+            background-color: #818CF8; /* indigo-400 */
+            border: 4px solid #1F2937; /* gray-800 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400">Luc G.R.</h1>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Software & DevOps Engineer</p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="https://github.com/lucgr" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luc-g-r/" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- About Me Section -->
+            <section id="about" class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-500 pb-2">About Me</h2>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    I am a passionate and driven engineer with a strong foundation in software engineering and DevOps principles. With a Master's in Software Engineering from the University of Amsterdam and a Bachelor's in Computer Science from Eindhoven University of Technology, I have a solid academic background. My professional experience includes roles in DevOps, software development, and research, where I've built my skills in Python, GCP, CI/CD pipelines with GitHub Actions and Jenkins, and much more. I am always eager to learn and apply new technologies to solve complex problems and improve development workflows.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="mb-12">
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-indigo-500 pb-2">Experience</h2>
+                <div class="relative pl-10 border-l-2 border-gray-200 dark:border-gray-700">
+                    <!-- SUE -->
+                    <div class="timeline-item mb-10">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Research Intern</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">SUE | Cloud Native Solutions</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Apr 2025 - Jul 2025 · 4 mos | Geldermalsen, Gelderland, Netherlands</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Conducted my master thesis, focusing on repository architecture and relevant developer tooling. My research involved investigating multi-repo management strategies and tooling, and developing a proof-of-concept virtual monorepo-tool aimed at improving developer workflows and overall experience when working with distributed codebases.</p>
+                    </div>
+                    <!-- ASML -->
+                    <div class="timeline-item mb-10">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">DevOps Engineer</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">ASML</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Jul 2022 - Aug 2024 · 2 yrs 2 mos | Veldhoven, North Brabant, Netherlands · Hybrid</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Skills: Github Actions · Python · DevOps · Google Cloud Platform (GCP) · Jenkins</p>
+                    </div>
+                    <!-- Xccelerated -->
+                    <div class="timeline-item mb-10">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">DevOps Engineer</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">Xccelerated | Part of Xebia · Full-time</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Jun 2022 - Jun 2023 · 1 yr 1 mo | Hybrid</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">13-month program with a focus on cloud and devops integrating learning with working at ASML. The program kicked off with a training, where we focused on topics like writing deployable code, DevOps Principles, Cloud Engineering on GCP, Containers and Kubernetes. After this, I received 1 day of training a week on various topics while working at ASML.</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Skills: Python · Google Cloud Platform (GCP) · Go · Terraform</p>
+                    </div>
+                     <!-- Poseidon Capital -->
+                    <div class="timeline-item mb-10">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Software Developer</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">Poseidon Capital</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Jun 2021 - Jan 2022 · 8 mos</p>
+                    </div>
+                    <!-- EuFlex Technificent -->
+                    <div class="timeline-item mb-10">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Student Mentor</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">EuFlex Technificent</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Sep 2020 - Jun 2021 · 10 mos | Eindhoven, North Brabant, Netherlands</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Student mentor for first year students of Computer Science and Engineering</p>
+                    </div>
+                    <!-- ANSA Øst-Holland -->
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Information Officer - ANSA Øst-Holland</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">ANSA - Association of Norwegian Students Abroad</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Nov 2019 - Apr 2021 · 1 yr 6 mos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-500 pb-2">Education</h2>
+                <div class="space-y-6">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">University of Amsterdam</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">Master of Science - MS, Software Engineering</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Aug 2024 - Jul 2025</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Eindhoven University of Technology</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">Bachelor of Science - BS, Computer Science and Engineering</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Sep 2019 - Jul 2022</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Activities and societies: Honors Academy. With minors in Security, and Game Design. Bachelor end project awarded an 8.0.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Eindhoven University of Technology</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">Honors, Competitive Programming and Problem Solving</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Sep 2020 - Jul 2022</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">A 2-year program of 30 ECTS including lectures and activities related to the field of competitive programming, problem solving, and algorithms. Final year project about the implementation of a dynamic pathfinding algorithm inspired by A* and D* with the use of quad trees for optimization. Unity was used to visualize the active path and grid in a realistic indoor environment. Participation in EAPC 2019, 2020, and 2021, BAPC 2021, Google Hashcode 2021 and 2022.</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Skills: Competitive Programming</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Oslo Cathedral School</h3>
+                        <p class="font-medium text-gray-600 dark:text-gray-400">High School Diploma, Natural Sciences</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">2016 - 2019</p>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Activities and societies: Model United Nations Katta. Specialization in Mathematics and Informatics.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Master's Thesis Section -->
+            <section id="thesis" class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-500 pb-2">Master's Thesis</h2>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start flex-wrap">
+                        <div class="mb-2">
+                            <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300">An Abstraction Layer for Multi-Repositories: Investigating the Virtual Monorepo Approach</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-500">University of Amsterdam · July 2025</p>
+                        </div>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold ml-auto px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300 h-fit">Grade: 8.5</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        Driven by a passion for improving Developer Experience (DevEx), my master's thesis delves into the prevalent challenges of multi-repository systems. It explores the trade-offs between multi-repo and monorepo architectures, addressing common developer pain points like fragmented workflows and high cognitive load.
+                    </p>
+                    <p class="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        The research proposes a "virtual monorepo" as a pragmatic solution, offering the unified workflow of a monorepo without the disruptive cost of a full migration. The core contribution is a conceptual framework defining the key characteristics of this approach. To validate this, I designed and implemented a proof-of-concept tool that acts as an abstraction layer, demonstrating a significant reduction in workflow complexity and overhead. The project confirms that a virtual monorepo is a valuable strategy for enhancing developer productivity in distributed codebases.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-500 pb-2">Licenses & Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">Professional Scrum Master I</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Scrum.org</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-500">Issued May 2025</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">GitHub Foundations</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">GitHub</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-500">Issued Apr 2025 · Expires Apr 2028</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">Google Cloud Certified - Associate Cloud Engineer</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Google</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-500">Issued Dec 2022 · Expires Dec 2025</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">Cloud Skills Boost: Perform Foundational Data, ML, and AI Tasks in Google Cloud</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Google</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-500">Issued Nov 2022</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">Google Cloud Big Data and Machine Learning Fundamentals</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Coursera</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-500">Issued Nov 2021</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 py-6 border-t border-gray-300 dark:border-gray-700">
+            <p class="text-gray-500 dark:text-gray-400">&copy; 2025 Lucas Gether-Rønning. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
